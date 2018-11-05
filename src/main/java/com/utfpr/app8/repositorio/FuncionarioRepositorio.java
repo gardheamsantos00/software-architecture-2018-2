@@ -11,4 +11,6 @@ import com.utfpr.app8.bean.Funcionario;
 @Transactional
 public interface FuncionarioRepositorio extends JpaRepository<Funcionario, Long>{
 
+	Funcionario findOne(Long id);
+
 }
